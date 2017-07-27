@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-sacale=1"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="icon" href="img/crown32.ico" type="image/x-icon"/>
+    <title>Registro</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <script src="js/country.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img id="logo" src="img/crown32.svg"/>
+                <a class="navbar-brand" href="#">Royal Crown</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="crucer.html">Flota</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Cruceros<span class="caret"></span>
+                            <ul class="dropdown-menu">
+                                <li><a href="crucer1.html">OASIS OF THE SEAS</a></li>
+                                <li><a href="crucer2.html">FREEDOM OF THE SEAS</a></li>
+                                <li><a href="crucer3.html">LIBERTY OF THE SEAS</a></li>
+                                <li><a href="crucer4.html">INDEPENDENCE OF THE SEAS</a></li>
+                                <li><a href="crucer7.html">NAVIGATOR OF THE SEAS</a></li>
+                                <li><a href="crucer8.html">MARINER OF THE SEAS</a></li>
+                                <li><a href="crucer9.html">EXPLORER OF THE SEAS</a></li>
+                                <li><a href="crucer10.html">VOYAGER OF THE SEAS</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="crucer5.html">NORWEGIAN EPIC</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="crucer6.html">QUEEN MARY 2</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">Registro</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="admin.html">Administración</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrap">
+        <div class="caja form">
+            <form>
+                <h2>Registro</h2>
+                <table class="table">
+                    <tr>
+                        <td><label for="nombre">Nombre:</label></td>
+                        <td><input id="nombre" type="text" name="nombre" maxlength="50" size="50" placeholder="Nombre(s)" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="apellidoPaterno">Apellido Paterno</label></td>
+                        <td><input id="apellidoPaterno" type="text" name="apellidoPaterno" maxlength="50" size="50" placeholder="Apellido Paterno" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="apellidoMaterno">Apellido Materno</label></td>
+                        <td><input id="apellidoMaterno" type="text" name="apellidoMaterno" maxlength="50" size="50" placeholder="Apellido Materno"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="iD">ID</label></td>
+                        <td><input id="iD" type="text" name="iD" maxlength="50" size="50" placeholder="ID" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Nacionalidad</label></td>
+                        <td><select id="country" name="country" required></select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="domicilio">Domicilio</label></td>
+                        <td><input id="domicilio" name="domicilio" type="text" maxlength="50" size="50" placeholder="Domicilio #No." required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cp">Codigo Postal</label></td>
+                        <td><input id="cp" name="cp" type="text" maxlength="10" size="12" placeholder="Codigo Postal" onkeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Correó Electronico</label></td>
+                        <td><input id="email" name="email" type="email" maxlength="50" size="50" placeholder="alguien@correo.com" required></td>
+                    </tr>
+                </table>
+                <button class="btn btn-default" type="submit">Aceptar</button>
+                <button class="btn btn-default" type="reset" onclick="javascript:history.go(-1);">Cancelar</button>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <center>
+            <p>
+                <img src="img/facebook2.svg">
+                <img src="img/twitter2.svg">
+                <img src="img/instagram.svg">
+                <img src="img/google-plus2.svg">
+                <img src="img/youtube3.svg">
+                &nbsp;&#124; &copy; Proyecto TSAW - 2015
+            </p>
+        </center>
+    </footer>
+</body>
+</html>

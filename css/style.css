@@ -1,0 +1,143 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+select{
+    height: 25px;
+}
+.caja{
+    margin: 4px 0;
+    border: 0 solid #FFF;
+    box-shadow: 1px 2px 10px #404040;
+    z-index: 1000;
+}
+.wrap{
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1260px;
+    min-width: 780px;
+}
+#logo{
+    float: left;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+.sidebox{
+    padding: 2px;
+    height: 400px;
+    overflow: scroll;
+}
+.box{
+    margin: 3px 0 3px 0;
+    padding: 2px;
+    display: inline-block;
+    -webkit-transition: margin 0.4s;
+    -moz-transition: margin 0.4s;
+    -o-transition: margin 0.4s;
+    -ms-transition: margin 0.4s;
+    transition: margin 0.4s;
+}
+.box:hover{
+    margin: 3px -10px 3px 10px;
+}
+.form{
+    padding: 10px;
+}
+#flashcontent{
+    height: 400px;
+}
+#flashcontent video{
+    width: 80%;
+    height: 400px;
+}
+.image{
+    padding: 1px 2px 2px 0;
+    margin-right: 2px;
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+.carousel{
+    height: 500px;
+/*    margin-bottom: 60px;*/
+}
+.carousel-caption{
+    z-index: 10;
+}
+.carousel .item{
+    height: 500px;
+    background-color: #777;
+}
+.carousel-inner > .item > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+/*    height: 500px;*/
+}
+.rainting{
+    text-align: right;
+    float: right;
+    margin-right: 5px;
+}
+.marketing{
+    font-size: 21px;
+}
+.large-box{
+    padding: 4px 10px;
+}
+.featurette-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+@media(max-width: 768px){
+    p{
+        clear: both;
+    }
+    .sidebox{
+        height: auto;
+    }
+    #flashcontent{
+        height: auto;
+    }
+    #flashcontent video{
+        height: auto;
+    }
+    .carousel{
+        height: 300px;
+    }
+    .carousel .item{
+        height: 300px;
+    }
+    .caja{
+        width: 100%;
+    }
+    .image{
+        padding: 0 0 10px 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .box:hover{
+        margin: 3px 0 3px 0;
+    }
+    .rainting{
+        margin: 0;
+        float: left;
+        clear: right;
+    }
+    .large-box{
+        padding: 4px 0;
+    }
+}
+.icon {
+    padding-right: 5px;
+	height: 30px;
+    width: 30px;
+}
+.side-bar-header{
+    color: #428bca;
+    padding: 0 20px;
+    display: block;
+    font-weight: bold;
+}

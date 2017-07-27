@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administración</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/crown32.ico" type="image/x-icon">
+</head>
+<body style="padding-top:120px;">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="z-index:999999;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img id="logo" src="img/crown32.svg"/>
+                <a class="navbar-brand">Royal Crown</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="crucer.html">Flota</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Cruceros<span class="caret"></span>
+                            <ul class="dropdown-menu">
+                                <li><a href="crucer1.html">OASIS OF THE SEAS</a></li>
+                                <li><a href="crucer2.html">FREEDOM OF THE SEAS</a></li>
+                                <li><a href="crucer3.html">LIBERTY OF THE SEAS</a></li>
+                                <li><a href="crucer4.html">INDEPENDENCE OF THE SEAS</a></li>
+                                <li><a href="crucer7.html">NAVIGATOR OF THE SEAS</a></li>
+                                <li><a href="crucer8.html">MARINER OF THE SEAS</a></li>
+                                <li><a href="crucer9.html">EXPLORER OF THE SEAS</a></li>
+                                <li><a href="crucer10.html">VOYAGER OF THE SEAS</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="crucer5.html">NORWEGIAN EPIC</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="crucer6.html">QUEEN MARY 2</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#">Administración</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" style="margin-top: 50px;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-2" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img id="logo" src="img/hammer.svg">
+          <a class="navbar-brand">Herramientas</a>
+        </div>
+        <div id="navbar-2" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img class="icon" src="img/clear-formatting.svg">Texto<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" onclick="tools('bold');">Bold</a></li>
+                <li><a href="#" onclick="tools('italic');">Italic</a></li>
+                <li><a href="#" onclick="tools('underline');">Underline</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img class="icon" src="img/font-size.svg">Titulo<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" onclick="tools('h1');">H1</a></li>
+                <li><a href="#" onclick="tools('h2');">H2</a></li>
+                <li><a href="#" onclick="tools('h3');">H3</a></li>
+                <li><a href="#" onclick="tools('h4');">H4</a></li>
+                <li><a href="#" onclick="tools('h5');">H5</a></li>
+                <li><a href="#" onclick="tools('h6');">H6</a></li>
+              </ul>
+            </li>
+            <li><a href="#" onclick="tools('img');"><img class="icon" src="img/image.svg">Imagen</a></li>
+            <li><a href="#" onclick="tools('clip');"><img class="icon" src="img/film.svg">Video</a></li>
+            <li><a href="#" onclick="tools('link');"><img class="icon" src="img/link.svg">Enlace</a></li>
+            <li><a href="#" onclick="tools('swf');"><img class="icon" src="img/font.svg">SWF</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="admin.html"><img class="icon" src="img/floppy-disk.svg">Guardar <span class="sr-only">(current)</span></a></li>
+            <li><a href="" onclick="javascript:history.go(-1);"><img class="icon" src="img/bin.svg">Descartar <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav><!--/.nav-collapse -->
+    <div class="container">
+        <div class="caja form">
+            <h4>Titulo:</h4>
+            <input id="titulo" name="titulo" type="text" size="70">
+            <hr>
+            <h4>Cuerpo:</h4>
+            <textarea id="texto" name="texto" style="height:700px;width:100%;" onkeypress="enterLine(event);"></textarea>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <center>
+            <p>
+                <img src="img/facebook2.svg">
+                <img src="img/twitter2.svg">
+                <img src="img/instagram.svg">
+                <img src="img/google-plus2.svg">
+                <img src="img/youtube3.svg">
+                &nbsp;&#124; &copy; Proyecto TSAW - 2015
+            </p>
+        </center>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
